@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #87c5ee;
+  --button-color: #3498db;
+  --secondary-color: #6c757d;
+  --accent-color: #2db74c;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "sidebar main";
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 70px 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.side-bar {
+  grid-area: sidebar;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+  overflow-y: auto;
+}

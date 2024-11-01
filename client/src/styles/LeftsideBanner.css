@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #87c5ee;
+  --button-color: #3498db;
+}
+.login-left {
+    flex: 1;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-logo {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .login-logo h3{
+    color: white;
+  }
+  
+  .login-logo img {
+    width: 90px; 
+  }
+  
+  .login-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image {
+    width: 270px; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .login-image:first-child {
+    margin-bottom: 100px; 
+  }

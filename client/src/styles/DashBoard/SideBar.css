@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #87c5ee;
+  --button-color: #3498db;
+  --secondary-color: #6c757d;
+  --accent-color: #2db74c;
+}
+.sidebar {
+    width: 270px;
+    /* height: 110vh; */
+    grid-area: sidebar;
+    background-color: var(--primary-color); 
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none; 
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 1px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+    border-bottom: 0.5px solid #aaa;
+  }
+  
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: var(--button-color);
+    color: black;
+  }
+  
+  .sidebar ul li a .icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .sidebar ul li a .text {
+    flex-grow: 1;
+  }
